@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.app {
+  padding: 2rem;
+}
+.app .search-form {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #757575;
+  display: flex;
+  justify-content: left;
+}
+.app .search-form .search-form__label {
+  opacity: 0;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+.app .search-form .search-form__input {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  border: 1px solid #DFDFDF;
+  border-radius: 0.5rem 0 0 0.5rem;
+  min-width: 175px;
+}
+.app .search-form .search-form__input::placeholder {
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+.app .search-form .search-form__button {
+  display: flex;
+  align-items: center;
+  min-width: 37px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #DFDFDF;
+  border-left: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  background: white;
+  background: linear-gradient(180deg, white 0%, #f2f2f2 100%);
+}
+.app .no-symbol {
+  display: none;
+  padding: 2rem 0;
+  text-align: center;
+}
+.app .data-presentation {
+  display: none;
+}
+.app .data-presentation .data-presentation__symbol {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #757575;
+  font-size: 1.25rem;
+}
+.app .data-presentation .data-presentation__symbol-info {
+  margin: 1rem 0 0.5rem 0;
+  color: #028102;
+  font-weight: 400;
+  font-size: 1.5625rem;
+}
+.app .data-presentation .data-presentation__symbol-info .data-presentation__symbol-info__last-price {
+  color: #0B060E;
+  font-size: 2.375rem;
+}
+.app .data-presentation .data-presentation--timestamp {
+  font-weight: 600;
+  color: #757575;
+  font-size: 0.6875rem;
+}
+.app .data-presentation ul.data-presentatio--other-info {
+  padding: 0;
+  list-style: none;
+}
+.app .data-presentation ul.data-presentatio--other-info li {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  color: #757575;
+  border-bottom: 1px solid #E7E6E6;
+  font-size: 0.75rem;
+}
+.app .data-presentation ul.data-presentatio--other-info li:first-child {
+  border-top: 1px solid #E7E6E6;
+}
+.app .data-presentation ul.data-presentatio--other-info li .data-presentatio--other-info--value {
+  color: #0B060E;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.loader {
+  display: none;
+  margin: 2rem auto;
+  border: 5px solid #E7E6E6;
+  border-radius: 50%;
+  border-top: 5px solid #4f0df7;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 0.8s linear infinite;
+  /* Safari */
+  animation: spin 0.8s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
